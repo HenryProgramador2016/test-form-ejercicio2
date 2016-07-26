@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<meta charset="utf-8">
+</head>
+<body>
+
+<form action="#" onsubmit="return false">	
+		<fieldset>	
+				<p><label for="producto"> Nombre del Producto:</label></p>
+				<input type="text" id="producto"  onkeypress="return soloLetras(event,this.value)"></input>
+
+				<p><label for="categoria" > Nombre de la categoria:</label></p>
+				<input type="text" id="categoria" onkeypress="return soloLetras(event,this.value)"></input>
+
+
+				<p><label for="precio"> Precio S/.:</label></p>
+				<input type="text" id="precio" onkeypress="return soloNumeros(event)"></input>
+
+
+				<p><button id="registrar">REGISTRAR</button></p>
+				
+
+				
+		</fieldset>
+		<textarea id="registrarProducto" cols="70" rows="15"></textarea>
+		<hr>
+		<button id="total_categorias">Categorias registradas</button>
+		<button id="total_productos">Productos registradas</button>
+		<button id="suma_productos">La suma de los productos</button>
+
+</form>
+<script type="text/javascript" src="js/funciones.js"></script>
+
+</body>
+</html>
